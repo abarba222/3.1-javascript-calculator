@@ -4,25 +4,27 @@ $gutter:0em;
 
 
 body {
-  background-image:url("../images/mount-rushmore.jpg");
+  background-image:url("../images/colosseum.jpg");
   background-size:cover;
   opacity: 50%;
   width:1200px;
-  height:auto;
+  height:750px;
 }
 
 section {
   @include outer-container(300px);
   /*border:5px solid red;*/
   position: relative;
-  	transform: 			translateY(20%);
-  border:50px solid rgba(0, 0, 0, .5);
+  	transform: 			translateY(30%);
+  border:50px solid rgba(0, 100, 250, .5);
   border-radius:10px;
+  margin-left:500px;
 }
 
 .display {
   position: relative;
   height:100px;
+  background-color:rgba(192,192,192,.5);
 
 
   .buttons{
@@ -40,7 +42,7 @@ nav button{
 }
 
 .close{
-  background-color:red;
+  background-color:green;
   font-weight:bold;
 }
 
@@ -50,7 +52,7 @@ nav button{
 }
 
 .maximize{
-  background-color:blue;
+  background-color:red;
   font-weight:bold;
 }
 
@@ -100,15 +102,12 @@ nav button{
 .ac,
 .plus-minus,
 .percent{
-  background-color:red;
+  background-color:green;
   color:white;
 }
 
-.division,
-.multiplication,
-.subtraction,
-.addition,
+.operator,
 .equals{
-  background-color:blue;
+  background-color:red;
   color:white;
 }
