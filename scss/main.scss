@@ -1,0 +1,114 @@
+@import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
+$gutter:0em;
+@import '../bower_components/neat/app/assets/stylesheets/neat';
+
+
+body {
+  background-image:url("../images/mount-rushmore.jpg");
+  background-size:cover;
+  opacity: 50%;
+  width:1200px;
+  height:auto;
+}
+
+section {
+  @include outer-container(300px);
+  /*border:5px solid red;*/
+  position: relative;
+  	transform: 			translateY(20%);
+  border:50px solid rgba(0, 0, 0, .5);
+  border-radius:10px;
+}
+
+.display {
+  position: relative;
+  height:100px;
+
+
+  .buttons{
+
+  }
+}
+
+.buttons{
+  margin:5px;
+}
+
+nav button{
+  border-radius:10px;
+
+}
+
+.close{
+  background-color:red;
+  font-weight:bold;
+}
+
+.minimize{
+  background-color:white;
+  font-weight:bold;
+}
+
+.maximize{
+  background-color:blue;
+  font-weight:bold;
+}
+
+.calculations {
+  text-align: right;
+  margin: 0;
+  font-size:50px;
+  margin-right:5px;
+  border-radius:10px;
+}
+
+.key-pad{
+  border-style:outset;
+  border-radius:10px;
+}
+
+.keypad-button, .equals, .ac{
+  @include span-columns(3);
+  height:50px;
+  @include omega;
+  font-weight:bold;
+  font-size:20px;
+  border:2px solid white;
+  border-style: outset;
+  transition: all 0.3s ease 0s;
+}
+
+.keypad-button:hover{
+  background:rgba(0,0,0,0.2);
+  color:white;
+}
+
+.equals:hover{
+  background:rgba(0,0,0,0.2);
+  color:white;
+}
+
+.ac:hover{
+  background:rgba(0,0,0,0.2);
+  color:white;
+}
+
+.zero{
+  @include span-columns(6 of 12);
+}
+
+.ac,
+.plus-minus,
+.percent{
+  background-color:red;
+  color:white;
+}
+
+.division,
+.multiplication,
+.subtraction,
+.addition,
+.equals{
+  background-color:blue;
+  color:white;
+}
