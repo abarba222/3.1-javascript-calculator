@@ -4,7 +4,7 @@ $gutter:0em;
 
 
 body {
-  background-image:url("../images/colosseum.jpg");
+  background-image:url("../images/roman-colosseum.jpg");
   background-size:cover;
   opacity: 50%;
   width:1200px;
@@ -16,7 +16,7 @@ section {
   /*border:5px solid red;*/
   position: relative;
   	transform: 			translateY(30%);
-  border:50px solid rgba(0, 100, 250, .5);
+  border:50px solid rgba(0, 100, 250, .4);
   border-radius:10px;
   margin-left:500px;
 }
